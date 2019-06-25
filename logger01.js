@@ -4,6 +4,10 @@ var app = require('express')()
 var exPino = require('express-pino-logger')()
 var pino = require('pino')
 const logger = pino(pino.destination('./my-file'))
+
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
  
 app.use(exPino)
  
@@ -34,9 +38,15 @@ app.get('/error', function (req, res) {
     console.log('get from error data = ')
     console.log(req.query.data)
     logger.error(req.query.data)
-    logger.error(req.query.data.level)
     res.send('hello error')
 })
 
+app.post('/error', function (req, res) {
+  console.log('data from error')
+  var dataA = req.body
+  console.log(dataA)
+  logger.error(dataA)
+  res.end("done")
+})
  
 app.listen(3000)

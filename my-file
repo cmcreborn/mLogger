@@ -4,3 +4,25 @@
 {"level":50,"time":1561456511152,"pid":12509,"hostname":"fanping-mobile.local","msg":"{\"level\":30,\"time\":1561455931706,\"pid\":12427,\"hostname\":\"fanping-mobile.local\",\"msg\":\"from /info\",\"v\":1}","v":1}
 {"level":50,"time":1561456833147,"pid":12546,"hostname":"fanping-mobile.local","msg":"{\"level\":30,\"time\":1561455931706,\"pid\":12427,\"hostname\":\"fanping-mobile.local\",\"msg\":\"from /info\",\"v\":1}","v":1}
 {"level":50,"time":1561456833147,"pid":12546,"hostname":"fanping-mobile.local","v":1}
+{"level":50,"time":1561475739266,"pid":9696,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561475798040,"pid":8940,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561475872796,"pid":8940,"hostname":"uaer-PC","msg":"aaa","v":1}
+{"level":50,"time":1561476571431,"pid":9180,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561476695691,"pid":2484,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561476729077,"pid":3576,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561476789058,"pid":3576,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561476853249,"pid":3576,"hostname":"uaer-PC","{
+msg:"asasas"
+}":"","v":1}
+{"level":50,"time":1561476893965,"pid":3576,"hostname":"uaer-PC","{
+'msgggg'":" 'asasas'\n}","v":1}
+{"level":50,"time":1561477055733,"pid":2564,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561477072650,"pid":2564,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561477097542,"pid":2564,"hostname":"uaer-PC","v":1}
+{"level":50,"time":1561477130427,"pid":9040,"hostname":"uaer-PC","{
+"msg": "asasa111s"
+}":"","v":1}
+{"level":50,"time":1561477194022,"pid":9040,"hostname":"uaer-PC","{
+"msg": "asasa111s",
+"aa":"5555"
+}":"","v":1}
