@@ -1,0 +1,6 @@
+{"level":30,"time":1561455480232,"pid":12374,"hostname":"fanping-mobile.local","msg":"from /w","v":1}
+{"level":30,"time":1561455931706,"pid":12427,"hostname":"fanping-mobile.local","msg":"from /info","v":1}
+{"level":30,"time":1561456434713,"pid":12489,"hostname":"fanping-mobile.local","msg":"from /error","v":1}
+{"level":50,"time":1561456511152,"pid":12509,"hostname":"fanping-mobile.local","msg":"{\"level\":30,\"time\":1561455931706,\"pid\":12427,\"hostname\":\"fanping-mobile.local\",\"msg\":\"from /info\",\"v\":1}","v":1}
+{"level":50,"time":1561456833147,"pid":12546,"hostname":"fanping-mobile.local","msg":"{\"level\":30,\"time\":1561455931706,\"pid\":12427,\"hostname\":\"fanping-mobile.local\",\"msg\":\"from /info\",\"v\":1}","v":1}
+{"level":50,"time":1561456833147,"pid":12546,"hostname":"fanping-mobile.local","v":1}
