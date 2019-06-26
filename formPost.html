@@ -4,81 +4,6 @@
 
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
-<script>
-  var socket = io.connect('http://localhost:3005');
-
-  socket.emit('join',{username:'chenfp.mobile@gmail.com',roomID:'123',token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs'});
-
-  socket.on('sys', function (data) {
-    console.log(data);
-    
-  });
-
-  socket.on('onEvent1', function (data) {
-    console.log(data);
-    socket.emit('TestEcho', { my: 'data' });
-  });
-
-  socket.emit('StartSport',{username:'chenfp.mobile@gmail.com',roomID:'123',token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs'});
-
-
-
-  socket.on('onStartSport', function (data) {
-    console.log(data);
-    socket.emit('STDuring', {username:'chenfp.mobile@gmail.com',roomID:'123',token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs',speed:'123',hr:'123',dist:'1234',time:'12333',r:'99999'});
-  });
-
-  socket.on('onSTDuring', function (data) {
-    console.log(data);
-    socket.emit('DuringCount', {username:'chenfp.mobile@gmail.com',roomID:'123',token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs'});
-  });
-
-  socket.on('onDuringCount', function (data) {
-    console.log(data);
-    
-  });
-
-  socket.on('onWhosHere', function (data) {
-    console.log(data);
-    socket.emit('WhosHere', {username:'chenfp.mobile@gmail.com',roomID:'123',token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs'});
-  });
-
-
-
-   socket.on('onTestEcho', function (data) {
-    console.log(data);
-    socket.emit('CheckToken',{token:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY2hlbmZwLm1vYmlsZUBnbWFpbC5jb20iLCJpYXQiOjE1MDI4NjkxNzksImV4cCI6MTUwMjk1NTU3OX0.9Tb1pu4nuSMICvDuxj_PZiqajGKOixbJm1qmED2xZNs',username:'chenfp.mobile@gmail.com'});
-  });
-
-   socket.on('disconnect',function(data){
-      console.log('disconnect...');
-   });
-
-  socket.on('onCheckToken', function (data) {
-    console.log(data);
-    //socket.emit('TestEcho', { my: 'data' });
-  });
-
-
-
-
-
-
-</script>
-
-<script>
-
-
-var timeStamp = Math.floor(Date.now());
-var timeStamp2 = Math.floor(Date.now() / 1000);
-console.log(" "+ timeStamp +"  "+timeStamp2+"  "+Date.now());
-var testDate = function(){
-  var tt = new Date();
-  return tt;
-}
-
-</script>
 <form action="http://localhost:3000/error" method="post">
   username:<br>
   <input type="text" name="username" value="test001">
@@ -86,9 +11,6 @@ var testDate = function(){
   repaireNo
   <input type="text" name="repaireNo" value="1">
   <br>
-<!--   dataNum
-  <input type="text" name="dataNum" value="2">
-  <br> -->
   rtTime
    <input type="text" name="rtTime" value="1">
   <br>
@@ -139,10 +61,7 @@ var testDate = function(){
   rtRPM
   <input type="text" name="rtRPM" value="tttt">
   <br><br>
-account
-nickname
-number
-captcha
+
 <input type="text" name="account" value="test2">
   <br><br>
   <input type="text" name="nickname" value="test2">
