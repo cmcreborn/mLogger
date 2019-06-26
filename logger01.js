@@ -5,10 +5,12 @@ var exPino = require('express-pino-logger')()
 var pino = require('pino')
 const logger = pino(pino.destination('./my-file'))
 
+// process POST request data for express version 4+ 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// for cross domain setting
 var cors = require('cors');
 var corsOption = {
   "origin": "*",
