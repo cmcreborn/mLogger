@@ -3,7 +3,7 @@
 var app = require('express')()
 var exPino = require('express-pino-logger')()
 var pino = require('pino')
-const logger = pino(pino.destination('./my-file'))
+const logger = pino(pino.destination('/var/log/mylog.log'))
 
 // process POST request data for express version 4+ 
 var bodyParser = require("body-parser");
